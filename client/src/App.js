@@ -5,6 +5,20 @@ import Customer from './components/Customer';
 import {Table,TableHead,TableBody,TableRow,TableCell,Paper} from '@mui/material';
 
 
+
+/*함수형 컴포넌트로하니깐 오류남 왜 안되는걸까 ..? 
+const [customersData, setCustomersData] = useState( [ ] );
+
+const callApi = async () => {
+  const response = await fetch('/api/customers');
+  const body = await response.json();
+  return body;
+  
+  useEffect(() => {
+    callApi().then((data) => setCustomersData(data));
+  }, [ ] );
+};*/
+
 class App extends Component{
 
   state={
